@@ -2,7 +2,7 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: default
+layout: home
 title: Home
 nav_order: 1
 ---
@@ -19,6 +19,8 @@ Die Community kommuniziert zum Großteil im offenen [Slack](https://openbikesens
 In das Datenportal können die Nutzer die Daten ihres OpenBikeSensors hochladen und (falls sie wollen) ihre Daten als OpenData mit allen teilen.
 
 <img class="youtube-video" data-video-id="YrpipBDGe9s" src="{{ "assets/thumbnails/YrpipBDGe9s.jpg" | relative_url }}" alt="Video über den OpenBikeSensor" />
+
+{% include latest_post.html %}
 
 ## Visualisierung
 Wer noch Ideen zur Visualisierung, Automatisierung, Programmierung, Auswertung, etc. hat oder einfach am Projekt interessiert ist und auf dem Laufenden gehalten werden will, kann sich gerne in der Community auf Slack einbringen.

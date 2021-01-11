@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div class="post-meta">
+  Geposted am {{ page.date | date_to_string: "ordinal", "DE" }}
+  {%- if page.author %}
+  von {{ page.author }}
+  {%- endif -%}
+</div>
+
+<h1>{{ page.title }}</h1>
+
+
+{{ content }}
+
+<div class="post-previous-next">
+    {% if page.previous %}
+    <div class="prev">
+        <a class="equalize" href="{{site.baseurl}}{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">
+            <div>
+                <h6>Vorheriger Post</h6>
+                <h4>{{ page.previous.title }}</h4>
+            </div>
+        </a>
+    </div>
+    {% endif %}
+
+    {% if page.next %}
+      <div class="next">
+          <a class="equalize" href="{{site.baseurl}}{{page.next.url}}" title="next Post: {{page.next.title}}">
+              <div>
+                  <h6>Nächster Post</h6>
+                  <h4> {{page.next.title}}</h4>
+              </div>
+          </a>
+      </div>
+    {% endif %}
+</div>

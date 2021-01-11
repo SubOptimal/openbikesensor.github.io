@@ -146,3 +146,73 @@ figure {
     cursor: pointer;
   }
 }
+
+.homepage-box {
+  border: 1px solid #eeebee;
+  border-radius: 4px;
+  padding: 16px;
+  margin: 32px;
+}
+
+.post-meta {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.post-previous-next {
+  h6 {
+    margin-bottom: 0;
+  }
+  h4 {
+    margin-top: 0.5em;
+  }
+
+  a {
+    color: green;
+    display: block;
+    padding: 0 4px;
+    border-radius: 4px;
+
+    &:hover {
+      background: #f5f4f5;
+    }
+  }
+
+
+  @media screen and (min-width: 600px) {
+    display: flex;
+
+    > .prev {
+      margin-right: 8px;
+    }
+    > .next {
+      text-align: right;
+      margin-left: 8px;
+    }
+    > * {
+      flex: 1 1 0;
+    }
+  }
+}
+
+.main-content ul.blog-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  > li {
+    &::before {
+      display: none;
+      content: none;
+    }
+
+    padding: 0;
+    margin: 32px 0;
+
+    > h2 > small {
+      font-size: 0.8rem;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+  }
+}
